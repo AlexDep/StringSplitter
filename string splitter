@@ -24,13 +24,13 @@ void extract_word(char *str, char *delimiter, char result[10][50]){
 
 int main()
 {
-    char  lotOfWord[]="salut;bye;konichiwa;bonjour;";
-    char  delim[]=";";
-    int i=0;
-    char result[10][50]={""};
+    char  lotOfWord[]="salut;bye;konichiwa;bonjour;";   // char array to split 
+    char  delim[]=";";                                  // delimtier to use for the split
+    int i=0;                                            
+    char result[10][50]={""};                           //size of your double array i represents the words ; j the characters
     extract_word(lotOfWord,delim,result);
     for(i = 0; i < 4; i++) {
-        cout << result[i] << "\n";
+        cout << result[i] << "\n";                      // Each word is contained into the result array
     }
     return 0;
 }
